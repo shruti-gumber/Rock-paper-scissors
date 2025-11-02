@@ -1,4 +1,4 @@
-let userScore = 0;//keep track
+let userScore = 0;
 let compScore = 0;
 
 const choices = document.querySelectorAll(".choice");
@@ -41,13 +41,13 @@ const playGame = (userChoice) => {
     }else {
         let userWin = true;
         if(userChoice==="rock"){
-            //comp ki either paper or scissor
+            //computer's either paper or scissor
             userWin = compChoice==="paper" ? false : true;
         }else if(userChoice==="paper"){
-            //comp ki either rock or scissor
+            //computer's either rock or scissor
             userWin = compChoice==="scissors" ? false : true;
         }else{
-            //user ki h scissors
+            //user's scissors
             userWin = compChoice==="rock" ? false : true;
         }
 
@@ -61,3 +61,4 @@ choices.forEach((choice) =>
     })
 
 );
+

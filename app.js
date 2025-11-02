@@ -9,7 +9,7 @@ const msg = document.querySelector("#msg");//paragraph element
 
 const genCompChoice = () => {
     const options = ["rock", "paper", "scissors"];
-    const randomIdx = Math.floor(Math.random() *3);//less than 3 values generate hongi point mei, usko decimal krne ke liye use floor function
+    const randomIdx = Math.floor(Math.random() *3);
     return options[randomIdx];
 };
 
@@ -59,4 +59,5 @@ choices.forEach((choice) =>
         const userChoice = choice.getAttribute("id");
         playGame(userChoice);
     })
+
 );
